@@ -10,7 +10,7 @@ const registryTool = (server: McpServer) => {
 适用场景：
 1. 用户询问如何使用特定api或功能
 2. 用户需要查看api、功能的 介绍，使用限制、使用场景、示例代码等`,
-    { apiName: z.string().description("api或功能名称。例如：IService, QueryWrapper, @Table 注解等") },
+    { apiName: z.string().describe("api或功能名称。例如：IService, QueryWrapper, @Table 注解等") },
     async ({ apiName }) => {
       const documentation = await getApiDocumentation(apiName);
       return {
