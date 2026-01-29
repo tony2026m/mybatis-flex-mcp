@@ -1,7 +1,8 @@
 # @tony2026m/mybatis-flex-mcp
 
 [![npm version](https://img.shields.io/npm/v/@tony2026m/mybatis-flex-mcp.svg)](https://www.npmjs.com/package/@tony2026m/mybatis-flex-mcp)
-[![license](https://img.shields.io/npm/l/@tony2026m/mybatis-flex-mcp.svg)](https://github.com/tony2026m/mybatis-flex-mcp/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
 
 > An MCP (Model Context Protocol) service for Mybatis-Flex API query | 一个减少 Mybatis-Flex 框架实现数据库操作代码时产生幻觉的 MCP 服务
 
