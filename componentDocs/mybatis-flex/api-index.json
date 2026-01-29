@@ -1,0 +1,248 @@
+[
+    {
+        "name": "MyBatis-Flex 是什么(what-is-mybatisflex)",
+        "description": "MyBatis-Flex 是一个优雅的 MyBatis 增强框架，它非常轻量、同时拥有极高的性能与灵活性。我们可以轻松的使用 Mybaits-Flex 链接任何数据库，其内置的\nQueryWrapper<Badge type=\"tip\" text=\"^亮点\" /> 帮助我们极大的减少了 SQL 编写的工作的同时，减少出错的可能性。\n\n总而言之，MyBatis-Flex 能够极大地提高我们的开发效率和开发体验，让我们有更多的时间专注于自己的事情。",
+        "link": "/zh/intro/what-is-mybatisflex.md",
+        "module": "简介"
+    },
+    {
+        "name": "快速开始(getting-started)",
+        "description": "",
+        "link": "/zh/intro/getting-started.md",
+        "module": "简介"
+    },
+    {
+        "name": "Maven 依赖(maven)",
+        "description": "本文档介绍如何为 MyBatis-Flex 配置 Maven 依赖关系。\n\n> [!TiP] Tip\n> 在示例中，MyBatis-Flex 的版本号可能并非最新版，请自行查看[最新版本](/zh/changes.html)，并修改版本号。",
+        "link": "/zh/intro/maven.md",
+        "module": "简介"
+    },
+    {
+        "name": "使用 Mybatis 原生功能(use-mybatis-native)",
+        "description": "我们使用 MyBatis-Flex 作为 MyBatis 的增强框架进行代码开发，并不会影响原有的 MyBatis 的任何功能。",
+        "link": "/zh/intro/use-mybatis-native.md",
+        "module": "简介"
+    },
+    {
+        "name": "支持的数据库类型(support-database)",
+        "description": "MyBatis-Flex 支持的数据库类型，如下表格所示，我们还可以通过自定义方言的方式，持续添加更多的数据库支持。\n\n\n| 数据库           | 描述                |\n|---------------|-------------------|\n| mysql         | MySQL 数据库         |\n| mariadb       | MariaDB 数据库       |\n| oracle        | Oracle11g 及以下数据库  |\n| oracle12c     | Oracle12c 及以上数据库  |\n| db2           | DB2 数据库           |\n| H2            | H2 数据库            |\n| hsql          | HSQL 数据库          |\n| sqlite        | SQLite 数据库        |\n| postgresql    | PostgreSQL 数据库    |\n| sqlserver2005 | SQLServer2005 数据库 |\n| sqlserver     | SQLServer 数据库     |\n| dm            | 达梦数据库             |\n| xugu          | 虚谷数据库             |\n| kingbasees    | 人大金仓数据库           |\n| phoenix       | Phoenix HBase 数据库 |\n| gauss         | Gauss 数据库         |\n| clickhouse    | ClickHouse 数据库    |\n| gbase         | 南大通用(华库)数据库       |\n| gbase-8s      | 南大通用数据库 GBase 8s  |\n| oscar         | 神通数据库             |\n| sybase        | Sybase ASE 数据库    |\n| OceanBase     | OceanBase 数据库     |\n| Firebird      | Firebird 数据库      |\n| derby         | Derby 数据库         |\n| highgo        | 瀚高数据库             |\n| cubrid        | CUBRID 数据库        |\n| goldilocks    | GOLDILOCKS 数据库    |\n| csiidb        | CSIIDB 数据库        |\n| hana          | SAP_HANA 数据库      |\n| impala        | Impala 数据库        |\n| vertica       | Vertica 数据库       |\n| xcloud        | 行云数据库             |\n| redshift      | 亚马逊 redshift 数据库  |\n| openGauss     | 华为 openGauss 数据库  |\n| TDengine      | TDengine 数据库      |\n| informix      | Informix 数据库      |\n| greenplum     | Greenplum 数据库     |\n| uxdb          | 优炫数据库             |\n| Doris         | Doris数据库          |\n| Hive SQL      | Hive 数据库          |\n| lealone       | Lealone 数据库       |\n| sinodb        | 星瑞格数据库            |",
+        "link": "/zh/intro/support-database.md",
+        "module": "简介"
+    },
+    {
+        "name": "增、删、改(add-delete-update)",
+        "description": "MyBatis-Flex 内置了一个名为 `BaseMapper` 的接口，它实现了基本的增删改查功能以及分页查询功能。\n\n> MyBatis-Flex 的 **代码生成器** 生成的所有 Mapper 辅助类，都是继承 BaseMapper。",
+        "link": "/zh/base/add-delete-update.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "基础查询(query)",
+        "description": "",
+        "link": "/zh/base/query.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "自动映射(auto-mapping)",
+        "description": "在 MyBatis-Flex 中，内置了非常智能的 **自动映射** 功能，能够使得我们在查询数据的时候，从数据结果集绑定到实体类（或者 VO、DTO\n等）变得极其简单易用。",
+        "link": "/zh/base/auto-mapping.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "关联查询(relations-query)",
+        "description": "在 MyBatis-Flex 中，我们内置了 3 种方案，帮助用户进行关联查询，比如 `一对多`、`一对一`、`多对一`、`多对多`等场景，他们分别是：\n\n- 方案1：Relations 注解\n- 方案2：Field Query\n- 方案3：Join Query",
+        "link": "/zh/base/relations-query.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "批量操作(batch)",
+        "description": "在 MyBatis-Flex 中，提供了许多批量操作（批量插入、批量更新等）的方法，当有多个方法的时候，会经常导致误用的情况。",
+        "link": "/zh/base/batch.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "链式操作🔥🔥(chain)",
+        "description": "在 MyBatis-Flex 中，内置了 `QueryChain.java` 、  `UpdateChain.java` 以及 `DbChain.java` 用于对数据进行链式查询操作和链式操作（修改和删除）。\n\n- **QueryChain**：链式查询\n- **UpdateChain**：链式更新\n- **DbChain**：链式调用 [Db + Row](./db-row.md)",
+        "link": "/zh/base/chain.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "QueryWrapper(querywrapper)",
+        "description": "在 [增删改](./add-delete-update) 和 [查询和分页](./query) 章节中，我们随时能看到 QueryWrapper 的身影，QueryWrapper 是用于构造 Sql 的\n强有力工具，也是 MyBatis-Flex 的亮点和特色。\n\n::: tip 提示\nQueryWrapper 可以被序列化通过 RPC 进行传输，因此，在微服务项目中，我们可以在客户端（网关、Controller 层等）构造出 QueryWrapper，传给\nProvider 层进行查询返回数据。\n:::",
+        "link": "/zh/base/querywrapper.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "Db + Row(db-row)",
+        "description": "Db + Row 工具类，提供了在 Entity 实体类之外的数据库操作能力。使用 Db + Row 时，无需对数据库表进行映射， Row 是一个 HashMap 的子类，相当于一个通用的 Entity。以下为 Db + Row 的一些示例：\n\n\n```java\n//使用原生 SQL 插入数据\nString sql = \"insert into tb_account(id,name) value (?, ?)\";\nDb.insertBySql(sql,1,\"michael\");\n\n//使用 Row 插入数据\nRow account = new Row();\naccount.set(\"id\",100);\naccount.set(ACCOUNT.USER_NAME,\"Michael\");\nDb.insert(\"tb_account\",account);\n\n\n//根据主键查询数据\nRow row = Db.selectOneById(\"tb_account\",\"id\",1);\n\n//Row 可以直接转换为 Entity 实体类，且性能极高\nAccount account = row.toEntity(Account.class);\n\n\n//查询所有大于 18 岁的用户\nString listsql = \"select * from tb_account where age > ?\"\nList<Row> rows = Db.selectListBySql(listsql,18);\n\n\n//查询所有大于 18 岁用户的Id和用户名对应的Map\nMap map = Db.selectFirstAndSecondColumnsAsMap(\"select id,user_name from tb_account where age >?\",18);\n\n//分页查询：每页 10 条数据，查询第 3 页的年龄大于 18 的用户\nQueryWrapper query=QueryWrapper.create()\n    .where(ACCOUNT.AGE.ge(18));\nPage<Row> rowPage=Db.paginate(\"tb_account\",3,10,query);\n```\n\n使用 MyBatis `#{}` `${}` 的方式传参 <Badge type=\"tip\" text=\"v1.8.5\" />\n\n```java\nMap<String, Integer> map = Collections.singletonMap(\"age\", 18);\nList<Row> rowList = Db.selectListBySql(\"select * from tb_account where age > #{age}\", map);\nRowUtil.printPretty(rowList);\n```\n\n> Db 工具类还提供了更多 增、删、改、查和分页查询等方法。\n>\n>\n具体参考： [Db.java](https://gitee.com/mybatis-flex/mybatis-flex/blob/main/mybatis-flex-core/src/main/java/com/mybatisflex/core/row/Db.java) 。",
+        "link": "/zh/base/db-row.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "Active Record(active-record)",
+        "description": "[Active Record](http://www.martinfowler.com/eaaCatalog/activeRecord.html) 模式出自 Martin Fowler\n写的《[企业应用架构模式](https://book.douban.com/subject/4826290/)》书中。在 Active Record\n模式中，对象中既有持久存储的数据，也有针对数据的操作。Active Record 模式把数据存取逻辑作为对象的一部分，处理对象的用户知道如何把数据写入数据库，还知道如何从数据库中读出数据。\n\n在 MyBatis-Flex 中实现 Active Record\n功能十分简单，只需让 Entity 类继承 [Model](https://gitee.com/mybatis-flex/mybatis-flex/blob/main/mybatis-flex-core/src/main/java/com/mybatisflex/core/activerecord/Model.java)\n即可。\n\n::: tip 注意事项\n- 使用 Active Record 功能时，项目中必须注入对应实体类的 BaseMapper 对象。\n- 如果不想手动创建 Mapper 接口，可以使用 [代码生成器](../others/codegen.md) 或 [APT](../others/apt.md#配置文件和选项) 辅助生成。\n  :::",
+        "link": "/zh/base/active-record.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "IService(service)",
+        "description": "MyBatis-Flex 提供了一个名为 `IService` 的接口，及其默认实现类 `ServiceImpl` ，用于简化在 「Service」 层重复定义 「Mapper」 层的方法。\n\n> `IService` 接口只是提供了简单且常用的 “增删改查” 方法，更多细节以及复杂的业务，还是需要使用 `Mapper` 进行处理。",
+        "link": "/zh/base/service.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "SpringBoot 配置文件(configuration)",
+        "description": "SpringBoot 配置文件（`application.yml` 等）；Solon 配置文件（`app.yml` 等）。主要是用于对 MyBatis 原生以及 MyBatis-Flex 的 `FlexGlobalConfig` 进行配置。\n\n示例如下：\n\n```yaml\nmybatis-flex:\n  #......\n  datasource:\n    #......\n  configuration:\n    #......\n  global-config:\n    #......\n  admin-config:\n    #......\n  seata-config:\n    #......\n```",
+        "link": "/zh/base/configuration.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "MyBatisFlexCustomizer(mybatis-flex-customizer)",
+        "description": "`MyBatisFlexCustomizer` 是 MyBatis-Flex 为了方便 `SpringBoot` 或 `Solon` 用户对 MyBatis-Flex 进行初始化而产生的接口。\n\n通过在 `@Configuration` 去实现 `MyBatisFlexCustomizer` 接口，我们可以对 MyBatis-Flex 进行一系列的初始化配置。这些配置可能包含如下的内容：\n\n- 1、FlexGlobalConfig 的全局配置\n- 2、自定义主键生成器\n- 3、多租户配置\n- 4、动态表名配置\n- 5、逻辑删除处理器配置\n- 6、自定义脱敏规则\n- 7、SQL 审计配置\n- 8、SQL 打印配置\n- 9、数据源解密器配置\n- 10、自定义数据方言配置\n- 11、...",
+        "link": "/zh/base/mybatis-flex-customizer.md",
+        "module": "基础功能"
+    },
+    {
+        "name": "@Table 注解(table)",
+        "description": "在 MyBatis-Flex 中，`@Table` 主要是用于给 Entity 实体类添加标识，用于描述 实体类 和 数据库表 的关系，以及对实体类进行的一些\n功能辅助。\n\n\n`@Table` 的定义如下：\n\n```java\npublic @interface Table {\n\n    /**\n     * 显式指定表名称\n     */\n    String value();\n\n    /**\n     * 数据库的 schema（模式）\n     */\n    String schema() default \"\";\n\n    /**\n     * 默认为 驼峰属性 转换为 下划线字段\n     */\n    boolean camelToUnderline() default true;\n\n    /**\n     * 默认使用哪个数据源，若系统找不到该指定的数据源时，默认使用第一个数据源\n     */\n    String dataSource() default \"\";\n\n    /**\n     * 监听 entity 的 insert 行为\n     */\n    Class<? extends InsertListener> onInsert() default NoneListener.class;\n\n    /**\n     * 监听 entity 的 update 行为\n     */\n    Class<? extends UpdateListener> onUpdate() default NoneListener.class;\n\n    /**\n     * 监听 entity 的查询数据的 set 行为，用户主动 set 不会触发\n     */\n    Class<? extends SetListener> onSet() default NoneListener.class;\n\n    /**\n     * 在某些场景下，我们需要手动编写 Mapper，可以通过这个注解来关闭 APT 的 Mapper 生成\n     */\n    boolean mapperGenerateEnable() default true;\n}\n```\n\n其使用方式如下：\n\n```java 1\n@Table(value = \"tb_account\", onUpdate = MyUpdateListener.class)\npublic class Account {\n\n}\n```",
+        "link": "/zh/core/table.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "@Id 注解(id)",
+        "description": "在 Entity 类中，MyBatis-Flex 是使用 `@Id` 注解来标识主键的，如下代码所示：\n\n```java 5\n@Table(\"tb_account\")\npublic class Account {\n\n    // id 为自增主键\n    @Id(keyType = KeyType.Auto)\n    private Long id;\n\n    //getter setter\n}\n```\n\n`@Id` 注解的内容如下：\n\n```java\npublic @interface Id {\n\n    /**\n     * ID 生成策略，默认为 none\n     *\n     * @return 生成策略\n     */\n    KeyType keyType() default KeyType.None;\n\n    /**\n     * 若 keyType 类型是 sequence， value 则代表的是\n     * sequence 序列的 sql 内容\n     * 例如：select SEQ_USER_ID.nextval as id from dual\n     *\n     * 若 keyType 是 Generator，value 则代表的是使用的那个 keyGenerator 的名称\n     *\n     */\n    String value() default \"\";\n\n\n    /**\n     * sequence 序列执行顺序\n     * 是在 entity 数据插入之前执行，还是之后执行，之后执行的一般是数据主动生成的 id\n     *\n     * @return 执行之前还是之后\n     */\n    boolean before() default true;\n}\n```\n\nkeyType 为主键的生成方式，KeyType 有 4 种类型：\n\n```java\npublic enum KeyType {\n\n    /**\n     * 自增的方式\n     */\n    Auto,\n\n    /**\n     * 通过执行数据库 sql 生成\n     * 例如：select SEQ_USER_ID.nextval as id from dual\n     */\n    Sequence,\n\n    /**\n     * 通过 IKeyGenerator 生成器生成\n     */\n    Generator,\n\n    /**\n     * 其他方式，比如在代码层用户手动设置\n     */\n    None,\n}\n```",
+        "link": "/zh/core/id.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "@Column 注解(column)",
+        "description": "MyBatis-Flex 提供了 `@Column` 用来对字段进行更多的配置，以下是 `@Column` 的代码定义：\n\n```java\npublic @interface Column {\n\n    /**\n     * 字段名称\n     */\n    String value() default \"\";\n\n    /**\n     * 是否忽略该字段，可能只是业务字段，而非数据库对应字段\n     */\n    boolean ignore() default false;\n\n    /**\n     * insert 的时候默认值，这个值会直接被拼接到 sql 而不通过参数设置\n     */\n    String onInsertValue() default \"\";\n\n    /**\n     * update 的时候自动赋值，这个值会直接被拼接到 sql 而不通过参数设置\n     */\n    String onUpdateValue() default \"\";\n\n    /**\n     * 是否是大字段，大字段 APT 不会生成到 DEFAULT_COLUMNS 里\n     */\n    boolean isLarge() default false;\n\n    /**\n     * 是否是逻辑删除字段，一张表中只能存在 1 一个逻辑删除字段\n     * 逻辑删除的字段，被删除时，会设置为 1，正常状态为 0\n     */\n    boolean isLogicDelete() default false;\n\n    /**\n     * 是否为乐观锁字段，若是乐观锁字段的话，数据更新的时候会去检测当前版本号，若更新成功的话会设置当前版本号 +1\n     * 只能用于数值的字段\n     */\n    boolean version() default false;\n\n    /**\n     * 配置的 jdbcType\n     */\n    JdbcType jdbcType() default JdbcType.UNDEFINED;\n\n    /**\n     * 自定义 TypeHandler\n     */\n    Class<? extends TypeHandler> typeHandler() default UnknownTypeHandler.class;\n\n}\n```",
+        "link": "/zh/core/column.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "逻辑删除(logic-delete)",
+        "description": "",
+        "link": "/zh/core/logic-delete.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "乐观锁(version)",
+        "description": "",
+        "link": "/zh/core/version.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "数据填充(fill)",
+        "description": "数据填充指的是，当 Entity 数据被插入 或者 更新的时候，会为字段进行一些默认的数据设置。这个非常有用，比如当某个 entity 被插入时候\n会设置一些数据插入的时间、数据插入的用户 id，多租户的场景下设置当前租户信息等等。\n\nMyBatis-Flex 提供了两种方式，帮助开发者进行数据填充。\n\n- 1、通过 `@Table` 注解的 `onInsert` 和 `onUpdate` 配置进行操作。这部分可以参考 [@Table 注解章节](./table) 。\n- 2、通过 `@Column` 注解的 `onInsertValue` 和 `onUpdateValue` 配置进行操作。这部分可以参考 [@Column 注解章节](./column)。",
+        "link": "/zh/core/fill.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "数据脱敏(mask)",
+        "description": "",
+        "link": "/zh/core/mask.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "数据缓存(data-cache)",
+        "description": "MyBatis-Flex 是一个 MyBatis 增强框架，所以您可以使用 MyBatis 提供的二级缓存来作为数据缓存。但是它仍然有很多的缺点，比如不适用于分布式环境，在这里推荐使用 [Spring Cache](https://docs.spring.io/spring-framework/docs/5.2.24.RELEASE/spring-framework-reference/integration.html#cache) 模块来处理数据缓存。",
+        "link": "/zh/core/data-cache.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "SQL 审计(audit)",
+        "description": "SQL 审计是一项非常重要的工作，是企业数据安全体系的重要组成部分，通过 SQL 审计功能为数据库请求进行全程记录，为事后追溯溯源提供了一手的信息，同时可以通过可以对恶意访问及时警告管理员，为防护策略优化提供数据支撑。\n\n同时、提供 SQL 访问日志长期存储，满足等保合规要求。",
+        "link": "/zh/core/audit.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "SQL 打印(sql-print)",
+        "description": "",
+        "link": "/zh/core/sql-print.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "多数据源(multi-datasource)",
+        "description": "MyBaits-Flex 内置了功能完善的多数据源支持<Badge type=\"tip\" text=\"^1.0.6\" />，不需要借助第三方插件或者依赖，开箱即用，\n支持包括 `druid`、`hikaricp`、`dbcp2`、`beecp` 在内的任何数据源，MyBatis-Flex 多数据源配置如下：\n\n```yaml\nmybatis-flex:\n  datasource:\n    ds1:\n      url: jdbc:mysql://127.0.0.1:3306/db\n      username: root\n      password: 123456\n    ds2:\n      url: jdbc:mysql://127.0.0.1:3306/db2\n      username: root\n      password: 123456\n```\n\n在以上配置中，`ds1` 和 `ds2` 是由用户自定义的，我们可以理解为数据源的名称，或者数据源的 `key`，这个在动态切换数据库中非常有用。\n\n在无 Spring 或 Solon 框架的场景下，代码如下：\n\n```java\nDataSource dataSource1 = new HikariDataSource();\ndataSource1.setJdbcUrl(....)\n\nDataSource dataSource2 = new HikariDataSource();\ndataSource2.setJdbcUrl(....)\n\nDataSource dataSource3 = new HikariDataSource();\ndataSource3.setJdbcUrl(....)\n\nMybatisFlexBootstrap.getInstance()\n        .setDataSource(\"ds1\", dataSource1)\n        .addDataSource(\"ds2\", dataSource2)\n        .addDataSource(\"ds3\", dataSource3)\n        .start();\n```",
+        "link": "/zh/core/multi-datasource.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "读写分离 💥(read-write-splitting)",
+        "description": "MyBatis-Flex 的读写分离功能是基于 【[多数据源](./multi-datasource.md)】 功能来实现的。\n\n读写分离的功能，要求当前环境必须是多个数据库（也可理解为多个数据源），其原理是：\n让主数据库（master）处理事务性操作，比如：增、删、改（INSERT、DELETE、UPDATE），而从数据库（slave）处理查询（SELECT）操作。",
+        "link": "/zh/core/read-write-splitting.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "数据源加密(datasource-encryption)",
+        "description": "数据源加密指的是我们对数据库的链接信息进行加密，目前 MyBatis-Flex 支持加密的内容有\n- 数据源 URL\n- 数据源用户名\n- 数据源用户密码\n\n通过数据源加密功能，我们可以有效的保证数据库安全，减少数据盗用风险。",
+        "link": "/zh/core/datasource-encryption.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "动态表名(dynamic-table)",
+        "description": "动态表名指的是用户在对数据进行 增删改查 的时候，传入表名能够根据上下文信息（比如用户信息、应用信息）等，动态修改当前的表。",
+        "link": "/zh/core/dynamic-table.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "事务管理(tx)",
+        "description": "MyBatis-Flex 提供了一个名为 `Db.tx()` 的方法<Badge type=\"tip\" text=\"^1.0.6\" />，用于进行事务管理，若使用 Spring 框架的场景下，也可使用 `@Transactional` 注解进行事务管理。\n\n`Db.tx()` 方法定义如下：\n\n```java\nboolean tx(Supplier<Boolean> supplier);\nboolean tx(Supplier<Boolean> supplier, Propagation propagation);\n\n<T> T txWithResult(Supplier<T> supplier);\n<T> T txWithResult(Supplier<T> supplier, Propagation propagation);\n```\n方法：\n- tx：返回结果为 Boolean，返回 `null` 或者 `false` 或者 抛出异常，事务回滚\n- txWithResult：返回结果由 `Supplier` 参数决定，只有抛出异常时，事务回滚\n\n参数：\n- **supplier**：要执行的内容（代码）\n- **propagation**：事务传播属性\n\n事务传播属性 `propagation` 是一个枚举类，其枚举内容如下：\n\n```java\n//若存在当前事务，则加入当前事务，若不存在当前事务，则创建新的事务\nREQUIRED(0),\n\n//若存在当前事务，则加入当前事务，若不存在当前事务，则已非事务的方式运行\nSUPPORTS(1),\n\n//若存在当前事务，则加入当前事务，若不存在当前事务，则抛出异常\nMANDATORY(2),\n\n//始终以新事务的方式运行，若存在当前事务，则暂停（挂起）当前事务。\nREQUIRES_NEW(3),\n\n//以非事务的方式运行，若存在当前事务，则暂停（挂起）当前事务。\nNOT_SUPPORTED(4),\n\n//以非事务的方式运行，若存在当前事务，则抛出异常。\nNEVER(5),\n\n//暂时不支持\nNESTED(6),\n```\n\n`Db.tx()` 代码示例：\n\n```java\nDb.tx(() -> {\n\n    //进行事务操作\n\n    return true;\n});\n```\n\n若 `tx()` 方法抛出异常，或者返回 false，或者返回 null，则回滚事务。只有正常返回 true 的时候，进行事务提交。",
+        "link": "/zh/core/tx.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "数据权限(data-permission)",
+        "description": "数据权限指的是不同的用户，通过某一个方法去查询的时候，得到的是不同的数据结果集。常见的数据权限有：\n\n- 获取全部数据\n- 仅获取本人创建的数据\n- 获取当前用户的部门数据\n- 获取部门级以下部门的数据\n- 获取某个地区的数据\n- 等等\n\n这一些，都是通过当前的用户的信息（部门、角色、权限等），查询时，添加特定的条件。在 MyBatis-Flex 中，我们可以通过 2 种方式来实现这一种需求。",
+        "link": "/zh/core/data-permission.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "字段权限(columns-permission)",
+        "description": "字段权限，指的是在一张表中设计了许多字段，但是不同的用户（或者角色）查询，返回的字段结果是不一致的。\n比如：tb_account 表中，有 user_name 和 password 字段，但是 password 字段只允许用户本人查询，\n或者超级管理员查询，这种场景下，我们会用到 字段权限 的功能。\n\n在 `@Table()` 注解中，有一个配置名为 `onSet`，用于设置这张表的 `设置` 监听，这里的 `设置` 监听指的是：\n当我们使用 sql 、调用某个方法去查询数据，得到的数据内容映射到 entity 实体，mybatis 通过 setter 方法去设置 entity 的值时的监听。\n\n\n以下是示例：\n\n**step 1：** 为实体类编写一个 set 监听器（`SetListener`）\n\n```java\npublic class AccountOnSetListener implements SetListener {\n    @Override\n    public Object onSet(Object entity, String property, Object value) {\n        if (property.equals(\"password\")){\n\n            //去查询当前用户的权限\n            boolean hasPasswordPermission = getPermission();\n            \n            //若没有权限，则把数据库查询到的 password 内容修改为 null\n            if (!hasPasswordPermission){\n                value = null;\n            }\n        }\n        return value;\n    }\n}\n```\n\n**step 2：** 为实体类配置 `onSet` 监听\n\n```java 1\n@Table(value = \"tb_account\", onSet = AccountOnSetListener.class)\npublic class Account {\n\n    @Id(keyType = KeyType.Auto)\n    private Long id;\n\n    private String userName;\n    \n    private String password;\n    \n    //getter setter\n}\n```\n\n更多的 `onSet` 还可以参考 [这里](./table.md)。",
+        "link": "/zh/core/columns-permission.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "字段加密(columns-encrypt)",
+        "description": "字段加密，指的是数据库在存入了明文内容，但是当我们进行查询时，返回的内容为加密内容，而非明文内容。\n\n以下是 MyBatis-Flex 字段加密示例：\n\n**step 1：** 为实体类编写一个 set 监听器（`SetListener`）\n\n```java\npublic class AccountOnSetListener implements SetListener {\n    @Override\n    public Object onSet(Object entity, String property, Object value) {\n        \n        if (value != null){\n            //对字段内容进行加密\n            value = encrypt(value);\n        }\n        \n        return value;\n    }\n}\n```\n\n**step 2：** 为实体类配置 `onSet` 监听\n\n```java 1\n@Table(value = \"tb_account\", onSet = AccountOnSetListener.class)\npublic class Account {\n\n    @Id(keyType = KeyType.Auto)\n    private Long id;\n\n    private String userName;\n    \n    private String password;\n    \n    //getter setter\n}\n```\n\n更多的 `onSet` 还可以参考 [这里](./table.md)。",
+        "link": "/zh/core/columns-encrypt.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "字典回写(columns-dict)",
+        "description": "字典回写，指的是在一个实体类中，可能会有很多业务字段，当我们发现有某个数据库字段赋值后，主动去为业务赋值。\n\n比如，在数据库存有一个字段为 sex，类型为 int，用于保存用户的性别，0 ：女，1 ：男，2 ：未知。 同时，在 entity 实体类中，还存在一个业务属性 sexString，用于在前台显示，那么我们使用如下的解决方案。\n\n\n**step 1：** 为实体类编写一个 set 监听器（`SetListener`）\n\n```java\npublic class AccountOnSetListener implements SetListener {\n    @Override\n    public Object onSet(Object entity, String property, Object value) {\n        Account account = (Account) entity;\n        if (property.equals(\"sex\") && value != null){\n            switch (value){\n                case 0:\n                    account.setSexString('女');\n                    break;\n                case 1:\n                    account.setSexString('男');\n                    break;\n                default:\n                    account.setSexString('未知');\n            }\n        }\n        return value;\n    }\n}\n```\n\n**step 2：** 为实体类配置 `onSet` 监听\n\n```java 1\n@Table(value = \"tb_account\", onSet = AccountOnSetListener.class)\npublic class Account {\n\n    @Id(keyType = KeyType.Auto)\n    private Long id;\n\n    private int sex;\n\n    @Column(ignore = true) //非数据库字段，需配置忽略该属性\n    private String sexString;\n\n    //getter setter\n}\n```\n\n更多的 `onSet` 还可以参考 [这里](./table.md)。",
+        "link": "/zh/core/columns-dict.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "枚举属性(enum-property)",
+        "description": "在某些场景下，我们希望在 Entity 中定义的属性是某一个枚举类，而非基本的数据类型，例如：\n\n```java 7\n@Table(value = \"tb_account\")\npublic class Account{\n\n    @Id(keyType = KeyType.Auto)\n    private Long id;\n\n    private TypeEnum typeEnum;\n}\n```\n在默认情况下，MyBatis 内置了一个名为：`EnumTypeHandler` 的处理器，用于处理这种场景。通过 `EnumTypeHandler` 处理后，数据库保存的是 `TypeEnum` 对应的属性名称，\n是一个 String 类型。例如 `TypeEnum.TYPE1` 保存到数据库的内容为 `TYPE1` 这个字符串。",
+        "link": "/zh/core/enum-property.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "多租户(multi-tenancy)",
+        "description": "**多租户技术**（英语：multi-tenancy technology），是一种软件架构技术，它是在探讨与实现如何于多用户的环境下共用相同的系统或程序组件，并且仍可确保各用户间数据的隔离性。\n\n多租户简单来说是指一个单独的实例可以为多个用户（或组织）服务。多租户技术要求所有用户共用同一个数据中心，但能提供多个客户端相同甚至可定制化的服务，并且仍然可以保障客户的数据隔离。\n\n多租户的数据隔离有许多种方案，但最为常见的是以列进行隔离的方式。MyBatis-Flex 内置的正是通过指定的列（租户ID `tenant_id`）进行隔离的方案。",
+        "link": "/zh/core/multi-tenancy.md",
+        "module": "核心功能"
+    },
+    {
+        "name": "代码生成器(codegen)",
+        "description": "",
+        "link": "/zh/others/codegen.md",
+        "module": "其他"
+    },
+    {
+        "name": "APT 设置(apt)",
+        "description": "MyBatis-Flex 使用了 APT（Annotation Processing Tool）技术，在项目编译的时候，会自动根据 Entity 类定义的字段帮你生成 \"ACCOUNT\" 类以及 Entity 对应的 Mapper 类，\n通过开发工具构建项目（如下图），或者执行 maven 编译命令: `mvn clean package` 都可以自动生成。这个原理和 lombok 一致。\n\n![](../../assets/images/build_idea.png)\n\n> 从1.1.9版本开始，APT默认不生成 Mapper 类文件。如需开启，参考下方配置选项。",
+        "link": "/zh/others/apt.md",
+        "module": "其他"
+    },
+    {
+        "name": "常见问题(faq)",
+        "description": "",
+        "link": "faq.md",
+        "module": "其他"
+    }
+]

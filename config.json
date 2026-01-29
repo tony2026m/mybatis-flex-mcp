@@ -1,0 +1,15 @@
+{
+  "script": {
+    "doc_root": {
+      "flex": "../.temp/mybatis-flex/"
+    }
+  },
+  "py": {
+
+  },
+  "js": {
+    "doc_root": {
+      "flex": "../componentDocs/mybatis-flex/"
+    }
+  }
+}
