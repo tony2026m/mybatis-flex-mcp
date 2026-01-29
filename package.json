@@ -1,6 +1,6 @@
 {
   "name": "@tony2026m/mybatis-flex-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An MCP (Model Context Protocol) Service for Mybatis-Flex API query | 一个减少 Mybatis-Flex 框架实现数据库操作代码时产生幻觉的 MCP 服务，包含系统提示词、API文档、使用描述、代码示例查询",
   "bin": {
     "mybatis-flex-mcp": "dist/cli.js"
